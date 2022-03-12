@@ -1,0 +1,55 @@
+<div class="flex-column">
+
+    <div class="flex-row bar" style="height: 8%;">
+
+        <image class="btn-img" src="/common/itemPage/img.png" onclick="backHandler"></image>
+        <text>Detail</text>
+        <image class="btn-img" src="/common/itemPage/img_1.png" onclick="optionHandler"></image>
+
+    </div>
+
+    <div class="item-img">
+
+        <image src="/common/itemPage/img_2.png"></image>
+
+    </div>
+
+    <div class="flex-column" style="margin: 2%; height: 22%;">
+
+        <text style="margin: 4%; font-size: 25px;">Running unisex shoes</text>
+        <text style="margin: 4%; font-size: 25px;">$100</text>
+        <text style="margin: 4%; font-size: 22px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</text>
+
+    </div>
+
+    <div class="flex-row select">
+
+        <text style="font-size: 15px;">Color:</text>
+        <button class="color-btn" type="circle" style="background-color: aqua;"></button>
+        <button class="color-btn" type="circle" style="background-color: orange;"></button>
+        <button class="color-btn" type="circle" style="background-color: orangered;"></button>
+        <div class="inc-div">
+            <button class="inc-btn" type="capsule" value="+" onclick="incVal"></button>
+            <text style="color: white; min-width: 30%; text-align: center;">{{val}}</text>
+            <button class="inc-btn" type="capsule" value="-" onclick="decVal"></button>
+        </div>
+
+    </div>
+
+    <text style="margin: 2% 4% 2% 4%;">Sizes:</text>
+
+    <div class="flex-row size-div" style="justify-content: space-around; ">
+        <button type="capsule" value="6 inches" on:click="clickHandler" style="margin: 1.5%;"></button>
+        <button type="capsule" value="7 inches" on:click="clickHandler" style="margin: 1.5%;"></button>
+        <button type="capsule" value="8 inches" on:click="clickHandler" style="margin: 1.5%; text-color: white; background-color: blue;"></button>
+        <button type="capsule" value="9 inches" on:click="clickHandler" style="margin: 1.5%;"></button>
+    </div>
+
+    <div class="flex-row add-div">
+
+        <button class="like-cart" type="circle" icon="/common/images/img_5.png"></button>
+        <button class="add-cart" type="capsule" value="Add to Cart" icon="/common/itemPage/img_1.png"></button>
+
+    </div>
+
+</div>

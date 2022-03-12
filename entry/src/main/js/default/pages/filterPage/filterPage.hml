@@ -1,0 +1,60 @@
+<div class="flex-column">
+
+    <div class="flex-row bar" style="height: 8%;">
+
+        <image class="btn-img" src="/common/itemPage/img.png" onclick="backHandler"></image>
+        <text>Filter</text>
+        <image class="btn-img" src="/common/itemPage/img_1.png" onclick="optionHandler"></image>
+
+    </div>
+
+    <text style="margin: 2% 4% 2% 4%;">Gender:</text>
+
+    <div class="flex-row gender-div" style="justify-content: space-around; ">
+        <button type="capsule" value="Male" on:click="clickHandler" style="margin: 1.5%; text-color: white; background-color: blue;"></button>
+        <button type="capsule" value="Female" on:click="clickHandler" style="margin: 1.5%;"></button>
+        <button type="capsule" value="Both" on:click="clickHandler" style="margin: 1.5%;"></button>
+    </div>
+
+    <text style="margin: 2% 4% 2% 4%;">Category:</text>
+    <select class="select-div">
+
+        <option value="sc" show="false">Select category</option>
+        <option value="shoe">Shoe</option>
+        <option value="table">Table</option>
+        <option value="cupboard">Cupboard</option>
+        <option value="sofa">Sofa</option>
+
+    </select>
+
+    <text style="margin: 2% 4% 2% 4%;">Brand:</text>
+    <select class="select-div">
+
+        <option value="sc" show="false">Select brand</option>
+        <option value="shoe">A-brand</option>
+        <option value="table">B-brand</option>
+        <option value="cupboard">C-brand</option>
+        <option value="sofa">D-brand</option>
+
+    </select>
+
+    <text style="margin: 2% 4% 2% 4%;">Price:</text>
+    <slider min="0" max="100" value="40" showtips="true"></slider>
+
+    <text style="margin: 2% 4% 2% 4%;">Size:</text>
+
+    <div class="flex-row size-div" style="justify-content: space-around; ">
+        <button type="capsule" value="6 inches" on:click="clickHandler" style="margin: 1.5%;"></button>
+        <button type="capsule" value="7 inches" on:click="clickHandler" style="margin: 1.5%;"></button>
+        <button type="capsule" value="8 inches" on:click="clickHandler" style="margin: 1.5%; text-color: white; background-color: blue;"></button>
+        <button type="capsule" value="9 inches" on:click="clickHandler" style="margin: 1.5%;"></button>
+    </div>
+
+    <div class="flex-row enter-tab">
+
+        <button type="capsule" value="Clear all" style="background-color: #f0f5f5; text-color: black;"></button>
+        <button type="capsule" value="Add"></button>
+
+    </div>
+
+</div>

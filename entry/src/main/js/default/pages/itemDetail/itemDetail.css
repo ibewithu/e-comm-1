@@ -1,0 +1,82 @@
+.flex-row {
+    flex-direction: row;
+}
+.flex-column {
+    flex-direction: column;
+}
+.btn-img {
+    width: 15%;
+    height: 100%;
+}
+.bar {
+    justify-content: space-between;
+    margin: 2%;
+    margin-top: 4%;
+}
+.bar image {
+    border-radius: 80px;
+}
+.item-img {
+    margin: 2%;
+    box-shadow: 0.1px 0.1px 2px 0px #527a7a;
+    border-radius: 25px;
+}
+.select {
+    height: 7%;
+    margin: 2%;
+    padding: 5%;
+}
+.color-btn {
+    margin: 4%;
+}
+.inc-div {
+    background-color: deepskyblue;
+    border-radius: 12px;
+    text-align: center;
+    width: 25%;
+    height: 80%;
+    position: absolute;
+    right: 0%;
+    top: 10%;
+    justify-content: space-around;
+    padding: 4% 1% 4% 1%;
+}
+.inc-btn {
+    text-align: left;
+    background-color: white;
+    text-color: black;
+    font-size: 25px;
+    font-weight: 900;
+}
+.size-div {
+    height: 8%;
+    padding: 12.5% 2% 5% 2%;
+}
+.size-div button {
+    font-size: 20px;
+    background-color: #f0f5f5;
+    text-color: black;
+    width: 22%;
+    height: 75%;
+    box-shadow: 0.1px 0.1px 7px 0px;
+}
+.like-cart {
+    background-color: white;
+    width: 17%;
+    height: 80%;
+    margin: 4%;
+    box-shadow: 0.1px 0.1px 7px 0px;
+}
+.add-div {
+    height: 10%;
+    margin: 10%;
+    padding: 2%;
+    justify-content: space-around;
+    align-items: center;
+}
+.add-cart {
+    background-color: blue;
+    width: 70%;
+    height: 75%;
+    font-size: 22px;
+}

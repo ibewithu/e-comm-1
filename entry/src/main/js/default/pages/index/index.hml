@@ -1,0 +1,83 @@
+
+
+<div class="container">
+    
+    <div class="inner-container nav-div" style="margin-top: 10px;" >
+        <button class="brand-logo" type="circle" icon="/common/images/icon.png" style="margin-left: 0%; background-color: white; width: 100px; height: 100px;"></button>
+        <text class="brand-name" style="margin-left: 5%;">{{brandName}}</text>
+        <button type="circle" icon="/common/images/img.png" class="user-logo" ></button>
+    </div>
+    
+    <text style="margin-left: 4%; margin-top: 3%">Discover</text>
+    <text style="margin-left: 4%;">our new items</text>
+
+    <div class="inner-container">
+        <search class="search" hint="search an item" style="width: 85%;"></search>
+        <button class="filter" type="circle" icon="/common/images/img_1.png" style="margin-left: 5%;" onclick="filterHandler"></button>
+    </div>
+    
+    <div class="inner-container show-off" style="height: 100px; justify-content: space-around;">
+
+        <image src="/common/images/img_2.png" style="width: 80px; height: 80px;"></image>
+
+        <div class="container" style="font-size: 20px; padding: 5% 2% 5% 2%;">
+            <text style="font-size: 20px;">Running Unisex</text>
+            <text style="font-size: 20px;">Shoes</text>
+            <text style="color: blue; font-size: 20px;">Coming Soon...</text>
+        </div>
+
+        <div class="">
+            <switch></switch>
+            <text style="font-size: 15px;">Notify me</text>
+        </div>
+
+    </div>
+    
+    <text style="margin: 2% 0% 2% 2%;">Categories:</text>
+
+    <div class="inner-container category-container" style="justify-content: space-around; ">
+        <button type="capsule" value="Shoe" on:click="clickHandler" style="margin: 1.5%; text-color: white; background-color: blue;"></button>
+        <button type="capsule" value="Table" on:click="clickHandler" style="margin: 1.5%;"></button>
+        <button type="capsule" value="Cupboard" on:click="clickHandler" style="margin: 1.5%;"></button>
+        <button type="capsule" value="Sofa" on:click="clickHandler" style="margin: 1.5%;"></button>
+    </div>
+
+    <div class="inner-container content">
+
+        <div class="item-div" style="flex-direction: column; width: 46%; margin: 2%; border-radius: 15px; padding: 2%;">
+            <text class="like" onclick="likeHandler">&#x1F90D;</text>
+            <image src="/common/images/img_3.png" onclick="detailHandler"></image>>
+            <text style="font-size: 15px; margin: 1%;">Running Unisex Shoes</text>
+            <text style="font-size: 15px; margin: 1%;">Edition 1</text>
+            <text style="font-size: 15px; margin: 1%;">Price 1400</text>
+        </div>
+
+        <div class="item-div" style="flex-direction: column; width: 45%; margin: 2%; border-radius: 15px; padding: 2%;">
+            <text class="like" onclick="likeHandler">&#10084;</text>
+            <image src="/common/images/img_4.png" onclick="detailHandler"></image>
+            <text style="font-size: 15px; margin: 1%;">Running Unisex Shoes</text>
+            <text style="font-size: 15px; margin: 1%;">Edition 2</text>
+            <text style="font-size: 15px; margin: 1%;">Price 2200</text>
+        </div>
+
+    </div>
+
+<!--    <div class="inner-container fixed">-->
+
+<!--        <image src="/common/images/img_7.png" style="height: 75%; width: 15%;" onclick="detail"></image>-->
+<!--        <image src="/common/images/img_8.png" style="height: 80%; width: 15%;"></image>-->
+<!--        <image src="/common/images/img_9.png" style="height: 80%; width: 15%;"></image>-->
+<!--        <image src="/common/images/img_10.png" style="height: 80%; width: 15%;"></image>-->
+
+<!--    </div>-->
+
+    <toolbar style="position: fixed; bottom: 0%;">
+
+        <toolbar-item value="Home" icon="/common/images/img_7.png"></toolbar-item>
+        <toolbar-item value="Categories" icon="/common/images/img_8.png"></toolbar-item>
+        <toolbar-item value="Notifications" icon="/common/images/img_9.png"></toolbar-item>
+        <toolbar-item value="My cart" icon="/common/images/img_10.png"></toolbar-item>
+
+    </toolbar>
+
+</div>
